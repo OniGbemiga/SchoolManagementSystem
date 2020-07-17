@@ -5,7 +5,7 @@
     <div class="">
         <h3 style="text-align: center"> REGISTRATION FORM </h3>
 
-        <form action="" method="" enctype="multipart/form-data">
+        <form action="/course" method="post" enctype="multipart/form-data">
             @csrf
             <div class="col-md-6" style = "border: 10px solid grey; border-radius: 20px 20px 20px 20px;position: center;display: block;text-align: center;margin-left: 150px">
                 <!-- left side of form -->
@@ -17,32 +17,32 @@
 
                         <div class="form-check-inline">
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="chemistry">CHEMISTRY
+                                <input type="checkbox" class="form-check-input" name="chemistry" value="chemistry">CHEMISTRY
                             </label>
                         </div>
                         <div class="form-check-inline">
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="physics">PHYSICS
+                                <input type="checkbox" class="form-check-input" name="physics" value="physics">PHYSICS
                             </label>
                         </div>
                         <div class="form-check-inline">
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="biology">BIOLOGY
+                                <input type="checkbox" class="form-check-input" name="biology" value="biology">BIOLOGY
                             </label>
                         </div>
                         <div class="form-check-inline">
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="geography">GEOGRAPHY
+                                <input type="checkbox" class="form-check-input" name="geography" value="geography">GEOGRAPHY
                             </label>
                         </div>
                         <div class="form-check-inline">
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="economics">ECONOMICS
+                                <input type="checkbox" class="form-check-input" name="economics" value="economics">ECONOMICS
                             </label>
                         </div>
                         <div class="form-check-inline">
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="agric">AGRICULTURAL SCIENCE
+                                <input type="checkbox" class="form-check-input" name="agric" value="agric">AGRICULTURAL SCIENCE
                             </label>
                         </div>
                 </div>
@@ -56,32 +56,32 @@
 
                         <div class="form-check-inline">
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="government">GOVERNMENT
+                                <input type="checkbox" class="form-check-input" name="government" value="government">GOVERNMENT
                             </label>
                         </div>
                         <div class="form-check-inline">
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="literature">LITERATURE
+                                <input type="checkbox" class="form-check-input" name="literature" value="literature">LITERATURE
                             </label>
                         </div>
                         <div class="form-check-inline">
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="accounting">ACCOUNTING
+                                <input type="checkbox" class="form-check-input" name="accounting" value="accounting">ACCOUNTING
                             </label>
                         </div>
                         <div class="form-check-inline">
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="commerce">COMMERCE
+                                <input type="checkbox" class="form-check-input" name="commerce" value="commerce">COMMERCE
                             </label>
                         </div>
                         <div class="form-check-inline">
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="arts">FINE ARTS
+                                <input type="checkbox" class="form-check-input" name="arts" value="arts">FINE ARTS
                             </label>
                         </div>
                         <div class="form-check-inline">
                             <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input" name="civic">CIVIC EDUCATION
+                                <input type="checkbox" class="form-check-input" name="civic" value="civic">CIVIC EDUCATION
                             </label>
                         </div>
                     <input class = "btn btn-warning" type = "submit" value = "submit-form" style="text-align: center;position: center;display: block;margin: 20px"/>

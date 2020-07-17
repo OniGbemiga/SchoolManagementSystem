@@ -2,13 +2,24 @@
 
 namespace App\Http\Controllers;
 
+use App\Biodata;
+use App\Course;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class PagesController extends Controller
 {
-    public function student()
+    public function __construct()
     {
-        return view('pages.student_page');
+        $this->middleware('auth');
+    }
+
+    public function student($id)
+    {
+        $course = Course::find($id);
+        dd($course);
+        return view('pages.student_page')->with('course',$course);
+        //return view('pages.student_page');
     }
 
     public function biodata()
@@ -23,5 +34,12 @@ class PagesController extends Controller
     public function registerCourse()
     {
         return view ('pages.register_course');
+    }
+
+    public function doc()
+    {
+        $biodata = DB::select('SELECT * FROM biodatas');
+        //dd($biodata);
+        return view ('pages.doc')->with('biodatas',$biodata);
     }
 }

@@ -19,10 +19,8 @@
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#Home">Home</a></li>
-                    <li><a href="#Showcase">Student</a></li>
-                    <li><a href="#Services">Staff</a></li>
-                    <li><a href="#Designers">FAQs</a></li>
-                    <li><a href="#Packages">Contact Us</a></li>
+                    <li><a href="#">Student</a></li>
+                    <li><a href="#">Contact Us</a></li>
                 </ul>
                 <p style="float: right; color: blue">Welcome guest</p>
             </div>
@@ -35,7 +33,7 @@
                 <img src="../images/logo.png"/>
             </div>
             <div class="col-md-9">
-                <h3>Obafemi Awolowo University</h3>
+                <h3>University Of Education</h3>
                 <h3>Student Information Portal</h3>
             </div>
         </div>
@@ -44,18 +42,33 @@
 	<div class="container" style="text-align: center;border:2px solid grey;float: center;width: 400px; height: 400px;
 			margin-top: 20px;padding: 20px; align-content: center;display: block;position: center">
 
-		<form role="form">
+		<form role="form" action="{{route('login')}}" method="post">
+            @csrf
 			<div class="form-group">
-				<input type="email" class="form-control" placeholder="Staff/Student ID number" style="height: 80px">
+				<input type="email" class="form-control" placeholder="Email" style="height: 80px" name="email" value="{{old('email')}}" @error('email') is-invalid @enderror">
+                @error('email')
+                <span class="invalid-feedback" role="alert">
+                   <strong>{{ $message }}</strong>
+                </span>
+                @enderror
 			</div>
 			<div class="form-group">
-				<input type="password" class="form-control" placeholder="Password" style="height: 80px" >
+				<input type="password" class="form-control" placeholder="Password" style="height: 80px" name="password" @error('password') is-invalid @enderror">
+                @error('password')
+                <span class="invalid-feedback" role="alert">
+                   <strong>{{ $message }}</strong>
+                </span>
+                @enderror
 			</div>
 			<div class="checkbox">
-				<label style="height: 80px"><input type="checkbox"> Remember me</label>
+				<label style="height: 50px"><input type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : ''}}> Remember me</label>
 			</div>
 				<button type="submit" class="btn btn-primary">Login</button>
 		</form>
+        <div style="margin-top: 10px">
+            <span>Don't Have an Account?</span>
+            <a href="/register"><button>Register</button></a>
+        </div>
 
 	</div>
 

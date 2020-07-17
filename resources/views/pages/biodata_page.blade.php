@@ -4,7 +4,7 @@
 
     <div class="">
         <h3 style="text-align: center"> Student Information Form - MIS 2 FORM</h3>
-        <form action="" method="" enctype="multipart/form-data">
+        <form action="/biodata" method="post" enctype="multipart/form-data">
             @csrf
             <div class="col-md-6" style = "border: 10px solid grey; border-radius: 20px 20px 20px 20px;position: center;display: block;text-align: center;margin-left: 150px">
                 <!-- left side of form -->
@@ -17,7 +17,7 @@
 
                     <div class="form-group">
                         <label for="FormerSurnameF">Former Surname</label>
-                        <input class = "form-control" type="text"placeholder="Former Surname&nbsp (If any)" value="" name="firstname"/>
+                        <input class = "form-control" type="text" name="firstname"/>
                     </div>
 
                     <div class="form-group">
@@ -67,7 +67,7 @@
                     </div>
                     <div class = "form-group">
                         <label>Extra Curricular <br/>Activities</label>
-                        <input class = "form-control" type="text" name="extracurricularactivitiesF" value="FOOTBALL, BASKETBALL, VOLLEY B"/>
+                        <input class = "form-control" type="text" name="extra" value="FOOTBALL, BASKETBALL, VOLLEY B"/>
                     </div>
                 </div>
 
@@ -104,7 +104,7 @@
 
                         <div class="form-group">
                             <label>Place of Origin</label>
-                            <input class = "form-control" type="text" name="placeoforigin" size="20"/>
+                            <input class = "form-control" type="text" name="origin" size="20"/>
                         </div>
 
                         <div class="form-group">
@@ -120,7 +120,7 @@
 
                         <div class="form-group">
                             <label>Permanent Home Address</label>
-                            <textarea name="address" class = "form-control" rows="4"></textarea>
+                            <textarea name="homeaddress" class = "form-control" rows="4"></textarea>
                         </div>
 
                         <div class="form-group">
@@ -135,6 +135,7 @@
                         <div class="form-group">
                             <label>Year of Entry</label>
                             <input class = "form-control" type="number" name="year"/>
+                            <input type="hidden" name="user_id" value="{{Auth::user()->id}}"/>
                         </div>
                         <div class="form-group">
                             <label>Course Duration</label>

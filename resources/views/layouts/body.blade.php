@@ -3,6 +3,12 @@
 <head>
     <title>student page</title>
     <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.css')}}">
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
 </head>
 <body>
 
@@ -19,12 +25,10 @@
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#Home">Home</a></li>
-                    <li><a href="#Showcase">Student</a></li>
-                    <li><a href="#Services">Staff</a></li>
-                    <li><a href="#Designers">FAQs</a></li>
+                    <li><a href="#">Student</a></li>
                     <li><a href="#Packages">Contact Us</a></li>
                 </ul>
-                <p style="float: right; color: blue">Welcome guest</p>
+                <p style="float: right; color: blue">Welcome {{Auth::user()->name}}</p>
             </div>
         </div>
     </nav>
@@ -35,7 +39,7 @@
                 <img src="../images/logo.png"/>
             </div>
             <div class="col-md-9">
-                <h3>Obafemi Awolowo University</h3>
+                <h3>University Of Education</h3>
                 <h3>Student Information Portal</h3>
             </div>
         </div>
@@ -59,16 +63,16 @@
                         <a href="{{route('course')}}">
                             <li class="list-group-item">Register Courses</li>
                         </a>
-                        <a href="/results">
+                        <a href="/students/{$student->id}">
                             <li class="list-group-item">View Results</li>
                         </a>
                         <a href="/reports">
                             <li class="list-group-item">Reports</li>
                         </a>
-                        <a href="/doc">
+                        <a href="{{route('doc')}}">
                             <li class="list-group-item">Documentation</li>
                         </a>
-                        <a href="#">
+                        <a href="{{route('logout')}}">
                             <li class="list-group-item">Sign Out</li>
                         </a>
                     </ul>
