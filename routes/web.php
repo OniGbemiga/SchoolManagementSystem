@@ -14,5 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth/register');
 });
+
+//PagesController
+Route::get('/biodata','PagesController@biodata')->name('biodata');
+Route::get('/student','PagesController@student')->name('student');
+Route::get('/profile','PagesController@profile')->name('profile');
+Route::get('/register_course','PagesController@registerCourse')->name('course');

@@ -1,0 +1,95 @@
+@extends('layouts.body')
+
+@section('content')
+
+    <div class="">
+        <h3 style="text-align: center"> REGISTRATION FORM </h3>
+
+        <form action="" method="" enctype="multipart/form-data">
+            @csrf
+            <div class="col-md-6" style = "border: 10px solid grey; border-radius: 20px 20px 20px 20px;position: center;display: block;text-align: center;margin-left: 150px">
+                <!-- left side of form -->
+                <div class = "col-lg-6"; style="color: blue">
+
+                    <ul class = "list-group" style = "margin-top: 10px">
+                        <li class="list-inline">Registration Number: <span>zoo/2013/052</span></li><br/><br/>
+                    </ul>
+
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="chemistry">CHEMISTRY
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="physics">PHYSICS
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="biology">BIOLOGY
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="geography">GEOGRAPHY
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="economics">ECONOMICS
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="agric">AGRICULTURAL SCIENCE
+                            </label>
+                        </div>
+                </div>
+
+                <!-- right side of form -->
+                <div class = "col-lg-4"; style="color: blue">
+
+                    <ul class = "list-group" style = "margin-top: 10px">
+                        <li class="list-inline">JAMB Reg Num: <span>324564KB</span></li><br/>
+                    </ul>
+
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="government">GOVERNMENT
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="literature">LITERATURE
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="accounting">ACCOUNTING
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="commerce">COMMERCE
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="arts">FINE ARTS
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" name="civic">CIVIC EDUCATION
+                            </label>
+                        </div>
+                    <input class = "btn btn-warning" type = "submit" value = "submit-form" style="text-align: center;position: center;display: block;margin: 20px"/>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+@endsection
