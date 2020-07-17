@@ -24,6 +24,7 @@ class PagesController extends Controller
 
     public function biodata()
     {
+
         return view('pages.biodata_page');
     }
 
@@ -36,9 +37,9 @@ class PagesController extends Controller
         return view ('pages.register_course');
     }
 
-    public function doc()
+    public function doc($id)
     {
-        $biodata = DB::select('SELECT * FROM biodatas');
+        $biodata = Biodata::find($id);
         //dd($biodata);
         return view ('pages.doc')->with('biodatas',$biodata);
     }

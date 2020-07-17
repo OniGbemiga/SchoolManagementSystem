@@ -10,11 +10,6 @@
                 <!-- left side of form -->
                 <div class = "col-lg-6"; style="color: blue">
 
-                    <ul class = "list-group" style = "margin-top: 10px">
-                        <li class="list-inline">Registration Number: <span>zoo/2013/052</span></li><br/><br/>
-                        <li class="list-inline">Name: <span>ONI OLUWAGBEMIGA AYODELE</span></li>
-                    </ul>
-
                     <div class="form-group">
                         <label for="FormerSurnameF">Former Surname</label>
                         <input class = "form-control" type="text" name="firstname"/>

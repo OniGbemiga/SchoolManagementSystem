@@ -25,7 +25,7 @@ Route::get('/biodata','PagesController@biodata')->name('biodata');
 Route::get('/students/{course}','PagesController@student');
 Route::get('/profile','PagesController@profile')->name('profile');
 Route::get('/register_course','PagesController@registerCourse')->name('course');
-Route::get('/doc','PagesController@doc')->name('doc');
+Route::get('/docs/{biodata}','PagesController@doc');
 
 //RegisterCourseCOntroller
 Route::resource('course','RegisterCourseController')->only(['store']);

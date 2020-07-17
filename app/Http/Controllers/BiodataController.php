@@ -44,7 +44,7 @@ class BiodataController extends Controller
         $biodata = Biodata::create($this->validateRequest($request));
         $this->storeImage($biodata);
 
-        return redirect('/student');
+        return redirect('/profile')->with('success','Successfully Update');
 
     }
 

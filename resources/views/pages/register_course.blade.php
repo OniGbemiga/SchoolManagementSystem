@@ -10,11 +10,6 @@
             <div class="col-md-6" style = "border: 10px solid grey; border-radius: 20px 20px 20px 20px;position: center;display: block;text-align: center;margin-left: 150px">
                 <!-- left side of form -->
                 <div class = "col-lg-6"; style="color: blue">
-
-                    <ul class = "list-group" style = "margin-top: 10px">
-                        <li class="list-inline">Registration Number: <span>zoo/2013/052</span></li><br/><br/>
-                    </ul>
-
                         <div class="form-check-inline">
                             <label class="form-check-label">
                                 <input type="checkbox" class="form-check-input" name="chemistry" value="chemistry">CHEMISTRY
@@ -49,11 +44,6 @@
 
                 <!-- right side of form -->
                 <div class = "col-lg-4"; style="color: blue">
-
-                    <ul class = "list-group" style = "margin-top: 10px">
-                        <li class="list-inline">JAMB Reg Num: <span>324564KB</span></li><br/>
-                    </ul>
-
                         <div class="form-check-inline">
                             <label class="form-check-label">
                                 <input type="checkbox" class="form-check-input" name="government" value="government">GOVERNMENT

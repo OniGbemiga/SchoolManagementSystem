@@ -63,15 +63,19 @@
                         <a href="{{route('course')}}">
                             <li class="list-group-item">Register Courses</li>
                         </a>
-{{--                        <a href="/students/{{$courses->id}}">--}}
-{{--                            <li class="list-group-item">View Results</li>--}}
-{{--                        </a>--}}
+                        @if(isset($courses->id))
+                        <a href="/students/{{$courses->id}}">
+                            <li class="list-group-item">View Results</li>
+                        </a>
+                        @endif
                         <a href="/reports">
                             <li class="list-group-item">Reports</li>
                         </a>
-                        <a href="{{route('doc')}}">
+                        @if(isset($biodatas->id))
+                        <a href="/docs/{{$biodatas->id}}">
                             <li class="list-group-item">Documentation</li>
                         </a>
+                        @endif
                         <a href="{{route('logout')}}">
                             <li class="list-group-item">Sign Out</li>
                         </a>
@@ -85,7 +89,7 @@
     </div>
 
 
-    <footer style="text-align: center; background-color: black; margin-top: 10px;padding: 10px">
+    <footer style="text-align: center; background-color: black; margin-top: 56px;padding: 10px">
         <span>&copy; All Rights reserved. Powered By <a href="#">GBEMIGA</a></span>
     </footer>
 </div>

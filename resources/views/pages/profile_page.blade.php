@@ -12,7 +12,7 @@
 {{--                        <p>Faculty: Science</p>--}}
                     </div>
                     <div class="col-md-3"; style="float: right;">
-                        <img src="{{}}" style="width: 40%; height: 40%">
+                        <img src="" style="width: 40%; height: 40%">
                     </div>
 
 @endsection

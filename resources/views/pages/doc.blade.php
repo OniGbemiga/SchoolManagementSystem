@@ -2,7 +2,7 @@
 
 @section('content')
 
-    @foreach($biodatas as $biodata)
+{{--    @foreach($biodata as $biodata)--}}
     <div class="col-md-6">
         <table class="table">
             <thead class="thead-dark">
@@ -12,71 +12,71 @@
             </tr>
             <tr>
                 <td>birth: </td>
-                <td>{{$biodata->birth}}</td>
+                <td>{{$biodatas->birth}}</td>
             </tr>
             <tr>
                 <td>Location: </td>
-                <td>{{$biodata->location}}</td>
+                <td>{{$biodatas->location}}</td>
             </tr>
             <tr>
                 <td>Religion: </td>
-                <td>{{$biodata->religion}}</td>
+                <td>{{$biodatas->religion}}</td>
             </tr>
             <tr>
                 <td>Kin Name: </td>
-                <td>{{$biodata->kinname}}</td>
+                <td>{{$biodatas->kinname}}</td>
             </tr>
             <tr>
                 <td>Kin Relationship: </td>
                 <td>
-                    {{$biodata->kinrelationship}}
+                    {{$biodatas->kinrelationship}}
                 </td>
             </tr>
             <tr>
                 <td>Address: </td>
                 <td>
-                    {{$biodata->address}}
+                    {{$biodatas->address}}
                 </td>
             </tr>
             <tr>
                 <td>Sponsor Name: </td>
-                <td>{{$biodata->sponsorname}}</td>
+                <td>{{$biodatas->sponsorname}}</td>
             </tr>
             <tr>
                 <td>Extra Curriculum: </td>
-                <td>{{$biodata->extra}}</td>
+                <td>{{$biodatas->extra}}</td>
             </tr>
             <tr>
                 <td>Nationality: </td>
-                <td>{{$biodata->nation}}</td>
+                <td>{{$biodatas->nation}}</td>
             </tr>
             <tr>
                 <td>Origin: </td>
-                <td>{{$biodata->origin}}</td>
+                <td>{{$biodatas->origin}}</td>
             </tr>
             <tr>
                 <td>Home Address: </td>
-                <td>{{$biodata->homeaddress}}</td>
+                <td>{{$biodatas->homeaddress}}</td>
             </tr>
             <tr>
                 <td>Kin Address: </td>
-                <td>{{$biodata->kinaddress}}</td>
+                <td>{{$biodatas->kinaddress}}</td>
             </tr>
             <tr>
                 <td>Kin Phone Number: </td>
-                <td>{{$biodata->kinphone}}</td>
+                <td>{{$biodatas->kinphone}}</td>
             </tr>
             <tr>
                 <td>Year of Entry: </td>
-                <td>{{$biodata->year}}</td>
+                <td>{{$biodatas->year}}</td>
             </tr>
             <tr>
                 <td>Duration Of course: </td>
-                <td>{{$biodata->coursetime}}</td>
+                <td>{{$biodatas->coursetime}}</td>
             </tr>
             </thead>
         </table>
     </div>
-    @endforeach
+{{--    @endforeach--}}
 
 @endsection

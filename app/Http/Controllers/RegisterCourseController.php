@@ -71,7 +71,7 @@ class RegisterCourseController extends Controller
         $course->civic = $request->input('civic');
         $course->save();
 
-        return redirect('/profile');
+        return redirect('/profile')->with('success','Successful');
     }
 
     /**
