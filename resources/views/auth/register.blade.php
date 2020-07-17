@@ -26,7 +26,7 @@
             </div>
         </div>
     </nav>
-
+    @include('include.messages')
     <div class="container" style="">
         <div class="row" id="Home" style="background-color: grey">
             <div class="col-md-3">

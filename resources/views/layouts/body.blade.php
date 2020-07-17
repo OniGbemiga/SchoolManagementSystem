@@ -32,7 +32,7 @@
             </div>
         </div>
     </nav>
-
+        @include('include.messages')
     <div class="container" style="margin-bottom: 10px">
         <div class="row" id="Home" style="background-color: grey">
             <div class="col-md-3">
@@ -63,9 +63,9 @@
                         <a href="{{route('course')}}">
                             <li class="list-group-item">Register Courses</li>
                         </a>
-                        <a href="/students/{$student->id}">
-                            <li class="list-group-item">View Results</li>
-                        </a>
+{{--                        <a href="/students/{{$courses->id}}">--}}
+{{--                            <li class="list-group-item">View Results</li>--}}
+{{--                        </a>--}}
                         <a href="/reports">
                             <li class="list-group-item">Reports</li>
                         </a>

@@ -17,8 +17,8 @@ class PagesController extends Controller
     public function student($id)
     {
         $course = Course::find($id);
-        dd($course);
-        return view('pages.student_page')->with('course',$course);
+        //dd($course);
+        return view('pages.student_page')->with('courses',$course);
         //return view('pages.student_page');
     }
 

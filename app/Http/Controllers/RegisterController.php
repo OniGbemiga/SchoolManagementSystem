@@ -37,6 +37,6 @@ class RegisterController extends Controller
         $user->save();
 
         //event(new WelcomeNewUserEvent($user));
-        return redirect('/profile')->with('success','Registered Successfully');
+        return redirect('/')->with('success','Registered Successfully.Please Login');
     }
 }

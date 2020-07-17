@@ -3,7 +3,7 @@
 @section('content')
 
 			<div class="col-md-3"; style="margin-top: 20px;float: right;">
-				<img src="../images/me.jpg" style="width: 40%; height: 40%">
+				<img src="" style="width: 40%; height: 40%">
 			</div>
 
 			<div class="col-md-6">
