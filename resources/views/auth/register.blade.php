@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>student page</title>
-    <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{secure_asset('css/bootstrap.css')}}">
 </head>
 <body>
 
